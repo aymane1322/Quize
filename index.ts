@@ -77,6 +77,7 @@ function scorLogique(data:QuizQuestion[],bulletes:NodeListOf<Element>,idInterval
     if (questionNumber !== data.length) {
         if (chosen === data[questionNumber].correctAnswer) {//scor concept manepulation 
             scor++
+            chosen=''
         }
         questionNumber++
         if (questionNumber !== data.length) {//index problem solved and end of question

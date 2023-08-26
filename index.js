@@ -82,6 +82,7 @@ function scorLogique(data, bulletes, idInterval) {
     if (questionNumber !== data.length) {
         if (chosen === data[questionNumber].correctAnswer) {
             scor++;
+            chosen = '';
         }
         questionNumber++;
         if (questionNumber !== data.length) {
