@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(zLI7Hbe.jpg);
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  min-height: 40rem;
+  position: relative;
+}
+.timer {
+  position: absolute;
+  top: -10px;
+  font-size: 40px;
+  color: rgb(235, 16, 16);
+}
+.timer::after {
+  content: " Left";
+  color: white;
+}
+.questionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 35rem;
+  width: 100%;
+  background-color: rgba(26, 24, 24, 0.9);
+  border-radius: 0.5rem;
+  gap: 3rem;
+  box-shadow: 1px 5px 5px rgb(255, 81, 0);
+}
+.question {
+  font-size: 20px;
+
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+.possibleAnswers {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 85%;
+  gap: 0.6rem;
+}
+.possibleAnswers span {
+  cursor: pointer;
+  padding: 1rem;
+}
+.possibleAnswers span:hover {
+  background-color: rgb(51, 50, 50);
+}
+button {
+    bottom: 70px;
+  position: absolute;
+  width: 30%;
+  height: 30px;
+  background-color: rgb(51, 90, 26);
+  cursor: pointer;
+  border-radius: 0.4rem;
+  color: black;
+  font-size: larger;
+  font-weight: 500;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+button:hover {
+  background-color: green;
+}
+@media (max-width: 565px) {
+  .timer {
+    top: 10px;
+    right: 5px;
+    font-size: 25px;
+    color: rgb(235, 16, 16);
+  }
+}
+
+.bullet {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(131, 173, 173);
+  border-radius: 50%;
+}
+
+.active {
+  background-color: rgb(51, 50, 50);
+}
+.currentQuestion {
+  background-color: rgb(116, 25, 25);
+}
+.a::before {
+  content: "A-";
+  margin-right: 10px;
+  color: chocolate;
+}
+.b::before {
+  content: "B-";
+  margin-right: 10px;
+  color: chocolate;
+}
+.c::before {
+  content: "C-";
+  margin-right: 10px;
+  color: chocolate;
+}
+.d::before {
+  content: "D-";
+  margin-right: 10px;
+  color: chocolate;
+}
+.AfterCss::after {
+  content: "";
+  position: absolute;
+  width: 37.5px;
+  height: 5px;
+  top: 7px;
+  background-color: rgb(116, 25, 25);
+}
+.theResult {
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.tryAgin {
+  cursor: pointer;
+  background-color: rgb(23, 43, 4);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.tryAgin:hover {
+  background-color: rgb(40, 75, 8);
+}
+.bulletes {
+    display: flex;
+    position: absolute;
+    gap: 2rem;
+    max-width: 1500px;
+    position: relative;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    top: 50px;
+  }
+  @media (max-width: 633px) {
+    .bulletes {
+        top: 30px;
+        gap: .2rem;
+      }
+      .AfterCss::after {
+        width: 9.2px;
+      }
+      button {
+        bottom: 35px;
+    }
+    *{
+        font-size: 13px;
+    }
+}
