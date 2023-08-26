@@ -98,7 +98,7 @@ function scorLogique(data:QuizQuestion[],bulletes:NodeListOf<Element>,idInterval
             (document.querySelector("button") as HTMLButtonElement).remove();
             (document.querySelector(".timer") as HTMLDivElement).remove();
             (document.querySelector(".theResult") as HTMLElement).style.display = "flex";
-            (document.querySelector(".theResult h1") as HTMLHeadingElement).innerHTML = `your Scor is ${scor}/${data.length}`;
+            (document.querySelector(".theResult h1") as HTMLHeadingElement).innerHTML = `your Score is ${scor}/${data.length}`;
         }
     }
     possibleAnswer.forEach((e) => { // active class problem soleved

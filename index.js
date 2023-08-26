@@ -104,7 +104,7 @@ function scorLogique(data, bulletes, idInterval) {
             document.querySelector("button").remove();
             document.querySelector(".timer").remove();
             document.querySelector(".theResult").style.display = "flex";
-            document.querySelector(".theResult h1").innerHTML = `your Scor is ${scor}/${data.length}`;
+            document.querySelector(".theResult h1").innerHTML = `your Score is ${scor}/${data.length}`;
         }
     }
     possibleAnswer.forEach((e) => {
